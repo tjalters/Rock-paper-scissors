@@ -6,18 +6,21 @@ using System.Threading.Tasks;
 
 namespace rockpaperscissors
 {
-    public class Game
+    public class Options
     {
         public string rock;
         public string paper;
         public string scissors;
-        public string lizard;
         public string spock;
-        public string PlayerOne;
-        public string PlayerTwo;
-        public string PlayerAi;
-        public bool PlayerOneWins;
-        public bool PlayerTwoWins;
-        public bool PlayerAiWins;
+        public string lizard;
+
+        public Options()
+        {
+            rock = "rock";
+            paper = "paper";
+            scissors = "scissors";
+            spock = "spock";
+            lizard = "lizard";
+        }
     }
 }

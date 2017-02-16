@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace rockpaperscissors
 {
-    class playerAI
+    public class playerAI
     {
+        string playerAi;
+
+        public playerAi()
+        {
+
+        }
     }
 }

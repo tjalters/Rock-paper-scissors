@@ -6,10 +6,15 @@ using System.Threading.Tasks;
 
 namespace rockpaperscissors
 {
-    public class Scissors
+    public class Options
     {
-        
+        string rock;
+        string paper;
+        string scissors;
+        string spock;
+        string lizards;
 
-        public Scissors
+
+        
     }
 }

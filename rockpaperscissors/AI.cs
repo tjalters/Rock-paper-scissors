@@ -6,12 +6,16 @@ using System.Threading.Tasks;
 
 namespace rockpaperscissors
 {
-    public class playerAI
+    public class AI : Player
     {
-        string playerAi;
 
-        public playerAi()
+        public AI()
         {
+            name = "AI";
+        }
+        public override void MakeWeaponChoice()
+        {
+            Random random = new Random();
 
         }
     }

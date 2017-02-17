@@ -6,18 +6,14 @@ using System.Threading.Tasks;
 
 namespace rockpaperscissors
 {
-    public class HumanPlayer
+    public class Human : Player
     {
-        string humanPlayerOne;
-        string humanPlayerTwo;
-        public HumanPlayer()
+        
+        public Human()
         {
             
         }
-        public HumanPlayer()
-        {
-            
-        }
+        
 
             
 

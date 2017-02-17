@@ -8,18 +8,22 @@ namespace rockpaperscissors
 {
     public class Player
     {
-        string name;
-        public Options options;
+        public string name;
         int score;
-
+        public string choice;
         public Player()
         {
-            options = new Options();
+
         }
-        public void MakeWeaponChoice()
+        public void GetName()
+        {
+            Console.WriteLine("Please enter your name");
+            name = Console.ReadLine();
+        }
+        public virtual void MakeWeaponChoice()
         {
             Console.WriteLine("Please choose Rock, Paper, Scissors, Lizard, or Spock");
-            string choice = Console.ReadLine();
+            choice = Console.ReadLine();
 
             switch (choice)
             {

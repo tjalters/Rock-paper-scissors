@@ -13,26 +13,56 @@ namespace rockpaperscissors
         public Game()
         {
             
-            PlayerOne = new Player();
-            PlayerTwo = new Player();  
+             
         }
+        public void RunGame()
+        {
+            DisplayWelcome();
+            GetNumberPlayers();
+            PlayerOne.MakeWeaponChoice();
+            PlayerTwo.MakeWeaponChoice();
+            DetermineRoundWinner();
 
-        public void DisplayPrompt()
+        }
+        public void DisplayWelcome()
         {
             Console.WriteLine("Welcome to Rock Paper Scissors Spock Lizard");
-            Console.ReadLine();
-            Console.WriteLine("What is your name?");
-            Console.ReadLine();
-            Console.WriteLine("Enter 1 to play against another user, enter 2 to play against computer");
-            Console.ReadLine();
-            //Create a method to give the user the option to pick whether they want to play against player 2 or AI
-            Console.WriteLine("Pick either Rock, Paper, Scissors, Spock, or Lizard");
         }
+        public void GetNumberPlayers()
+        {
+            Console.WriteLine("Enter '1' to play against computer, enter '2' to play against user");
+            int HumanPlayers = int.Parse(Console.ReadLine());
+            if (HumanPlayers == 1)
+            {
+                PlayerOne = new Human();
+                PlayerTwo = new AI();
+                PlayerOne.GetName();
+                //This is where they select to play against another user
+                //Player 1 is always a person, Player 2 is a person or computer
+            }
+            else if (HumanPlayers == 2)
+            {
+                PlayerOne = new Human();
+                PlayerTwo = new Human();
+                PlayerOne.GetName();
+                PlayerTwo.GetName();
+            }
+            else
+            {
+                Console.WriteLine("Invalid entry");
+                GetNumberPlayers();
+            }
+        }
+
+        public void DetermineRoundWinner()
+        {
+
+        }
+
 
         public void DisplayOutcomes(string rock, string paper, string scissors, string spock, string lizard)
         {
-            Console.WriteLine(PlayerOne.options.rock);
-            Console.WriteLine(PlayerTwo.options.spock);
+            
         }
 
             

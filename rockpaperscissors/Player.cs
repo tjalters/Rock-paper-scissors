@@ -9,38 +9,46 @@ namespace rockpaperscissors
     public class Player
     {
         public string name;
-        int score;
-        public string choice;
+        public int score;
+        public int choice;
+        public string weaponChoice;
         public Player()
         {
 
         }
+
+        
         public void GetName()
         {
             Console.WriteLine("Please enter your name");
             name = Console.ReadLine();
         }
-        public virtual void MakeWeaponChoice()
+        public virtual MakeWeaponChoice()
         {
-            Console.WriteLine("Please choose Rock, Paper, Scissors, Lizard, or Spock");
-            choice = Console.ReadLine();
+            Console.WriteLine("Please choose 0 for Rock, 1 for Paper, 2 for Scissors, 3 for Lizard, or 4 for Spock");
+            choice = int.Parse(Console.ReadLine());
 
             switch (choice)
             {
-                case "Rock":
-                    Console.WriteLine("selected " + choice);
+                case 0:
+                    Console.WriteLine("selected rock");
+                    weaponChoice = "Rock";
                     break;
-                case "Paper":
-                    Console.WriteLine("selected" + choice);
+                case 1:
+                    Console.WriteLine("selected paper");
+                    weaponChoice = "Paper";
                     break;
-                case "Scissors":
-                    Console.WriteLine("selected" + choice);
+                case 2:
+                    Console.WriteLine("selected scissors");
+                    weaponChoice = "Scissors";
                     break;
-                case "Lizard":
-                    Console.WriteLine("selected" + choice);
+                case 3:
+                    Console.WriteLine("selected lizard");
+                    weaponChoice = "Lizard";
                     break;
-                case "Spock":
-                    Console.WriteLine("selected" + choice);
+                case 4:
+                    Console.WriteLine("selected spock");
+                    weaponChoice = "Spock";
                     break;
                 default:
                     Console.WriteLine("Not a valid choice");
@@ -48,5 +56,10 @@ namespace rockpaperscissors
             }
         }
         
+        
+        
+            
+        
+
     }
 }

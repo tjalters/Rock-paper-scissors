@@ -13,10 +13,12 @@ namespace rockpaperscissors
         {
             name = "AI";
         }
-        public override void MakeWeaponChoice()
+        public override MakeWeaponChoice()
         {
+            
             Random random = new Random();
-
+            int ComputerSelection = random.Next(0, 5);
+            return ComputerSelection;
         }
     }
 }

@@ -8,12 +8,16 @@ namespace rockpaperscissors
 {
     public class Game
     {
-            Player PlayerOne;
-            Player PlayerTwo;
+        Player PlayerOne;
+        Player PlayerTwo;
+
+
+
+
         public Game()
         {
-            
-             
+
+
         }
         public void RunGame()
         {
@@ -21,7 +25,8 @@ namespace rockpaperscissors
             GetNumberPlayers();
             PlayerOne.MakeWeaponChoice();
             PlayerTwo.MakeWeaponChoice();
-            DetermineRoundWinner();
+            PlayRound();
+
 
         }
         public void DisplayWelcome()
@@ -54,12 +59,38 @@ namespace rockpaperscissors
             }
         }
 
-        public void DetermineRoundWinner()
+        public void PlayRound() //based on the algorithm provided to us
         {
+            int result = (5 + (PlayerOne.choice - PlayerTwo.choice)) % 5;
+            if (result = 1 || result = 3 >= PlayerOne.choice)
+                {//announce winner and add point to winner
+                    Console.WriteLine("Player 1 wins!");
+                    //if a = 1 or 3, player one wins 
+                }
+                else if (result = 2 || result = 4 >= PlayerTwo.choice)
+                {
+                    Console.WriteLine("Player 2 wins!");
 
+                    //if b = 2 or 4, player two wins
+                }
+                else if(result == 0)
+            {
+                Console.WriteLine("Players tied. Play round again");
+              
+            }
         }
 
-
+        public void CheckWinner()
+        {
+            if (PlayerOne.score == 2)
+            {
+                Console.WriteLine("Player 1 wins the game!");
+            }
+            else if (PlayerTwo.score == 2)
+            {
+                Console.WriteLine("Player 2 wins the game");
+            }
+        }
         public void DisplayOutcomes(string rock, string paper, string scissors, string spock, string lizard)
         {
             

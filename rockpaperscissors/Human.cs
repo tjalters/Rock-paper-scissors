@@ -16,8 +16,9 @@ namespace rockpaperscissors
 
 
 
-        public virtual MakeWeaponChoice()
+        public override void MakeWeaponChoice()
         {
+            base.MakeWeaponChoice();
             Console.WriteLine("Please choose 0 for Rock, 1 for Paper, 2 for Scissors, 3 for Lizard, or 4 for Spock");
             choice = int.Parse(Console.ReadLine());
 
@@ -46,6 +47,7 @@ namespace rockpaperscissors
                 default:
                     Console.WriteLine("Not a valid choice");
                     break;
+                    
             }
         }
 

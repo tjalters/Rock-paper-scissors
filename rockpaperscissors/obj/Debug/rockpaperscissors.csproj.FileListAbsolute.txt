@@ -1,3 +1,7 @@
 c:\users\tjalters\documents\visual studio 2015\Projects\rockpaperscissors\rockpaperscissors\bin\Debug\rockpaperscissors.exe.config
 C:\Users\tjalters\Desktop\rockpaperscissors\rockpaperscissors\bin\Debug\rockpaperscissors.exe.config
 C:\Users\tjalters\Desktop\rockpaperscissors\rockpaperscissors\obj\Debug\rockpaperscissors.csprojResolveAssemblyReference.cache
+C:\Users\tjalters\Desktop\rockpaperscissors\rockpaperscissors\bin\Debug\rockpaperscissors.exe
+C:\Users\tjalters\Desktop\rockpaperscissors\rockpaperscissors\bin\Debug\rockpaperscissors.pdb
+C:\Users\tjalters\Desktop\rockpaperscissors\rockpaperscissors\obj\Debug\rockpaperscissors.exe
+C:\Users\tjalters\Desktop\rockpaperscissors\rockpaperscissors\obj\Debug\rockpaperscissors.pdb
